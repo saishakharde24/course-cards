@@ -5,24 +5,25 @@
    <style>
     .container{
         display: flex;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         }
 
     .item{
-        height: 400px;
+        height: 350px;
         width: 300px;
         margin:5px;
-        border-radius: 10px 10px 0px 0px;
-        border: 5px solid gray;
-        background-color: white;
+        border-radius: 4px 4px 4px 4px;
+        border: 2px solid rgb(221,217,217);
+        background-color: rgb(255, 250, 241);
 
     }
 
     .item:hover{
-        height: 400px;
+        height:350px;
         width:300px;
         margin: 5px;
-        background-color: azure;
+        background-color:rgb(253, 241, 230);
         border-radius: 10px;
         border:1px solid gainsboro 
     }
@@ -30,17 +31,95 @@
     .heading{
         border-radius: 10px 10px 0px 0px;
         margin-bottom: 5px;
+
     }
 
     .project-heading{
-        font-family: 'Courier New', Courier, monospace;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 600;
         font-size: 22px;
+        margin-left: 10px;
     }
 
     .course-name{
         padding-right: 10px;
         padding-left: 10px;
+        background-color: rgb(253, 229, 198);
+        margin-left:10px;
+        border-radius: 4px;
+    }
+    
+    .description{
+        font-size: 14px;
+        color: rgb(105,105,105);
+        margin-left: 10px;
+    }
+
+    .tech-stack{
+        display:flex;
+        margin:2px;
+    }
+
+    .tech{
+        font-size: 12px;
+        border-radius: 20px;
+        background-color: rgb(220,220,220);
+        padding: 4px 20px;
+        margin-right:10px;
+        margin-left: 10px;
+    }
+
+    .duration{
+        display: flex;
+        justify-content: space-between;
+        margin-top:10px;
+        margin-left: 10px;
+    }
+
+    .project-duration-info{
+        font-size:14px;
+        margin-right: 10px;
+    }
+
+    .profile-img{
+        border-radius:50%;
+        margin-right: 5px;
+    }
+
+    .project-duration-sub-info{
+        display: flex;
+        align-items: center;
+    }
+
+    .calender{
+        margin-right:5px;
+    }
+
+    .hr-line{
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border:rgb(221, 221, 221) 0.2px solid;
+    }
+
+    .additional{
+        display: flex;
+        justify-content: space-between;
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    .add-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .add-icon-2{
+        display: flex;
+        color: rgb(82, 140, 172);
+        font-weight:14px ;
+        cursor: pointer;
+        align-items: center;
     }
 
    </style>
@@ -49,14 +128,56 @@
     <div class="container">
         <div class="item">
             <img src="C:\Users\saish\OneDrive\Desktop\course-cards\spaceship rtc.png" width="300px" class="rtc img"/>
-        </div>
+        
         <div class="heading">
             <span class="project-heading">Spaceship</span>
             <br/>
             <span class="course-name">Internship Cohort Program 3.0</span>
             <p class="description">Spaceship is a mini Wikipedia 📖 for computer science students, created by RoadToCode.</p>
 
+            <div class="tech-stack">
+                <span class="tech">React</span>
+                <span class="tech">GitHub</span>
+                <span class="tech">MongoDB</span>
+            </div>
+
+            <div class="duration">
+                <div class="project-duration-sub-info">
+                    <img src="C:\Users\saish\OneDrive\Desktop\course-cards\calendar.png" height="15px" class="calender"/>
+                <span class="project-duration-info">Jan 2023-May 2025</span>
+                </div>
+
+                <div class="project-duration-sub-info">
+                    <img src="C:\Users\saish\OneDrive\Desktop\course-cards\profile img.webp" height="20px" class="profile-img"/>
+                <span class="project-duration-info">Pinki Hole</span>
+                </div>
+            </div>
+            <hr class="hr-line"/>
+
+            <div class="additional">
+                <div class="add-icon">
+                    <img src="C:\Users\saish\OneDrive\Desktop\course-cards\deafult-clap-logo.svg" height="20px" style="margin-right: 5px;"/>
+                    <span style="margin-right:10px;">12</span>
+
+                    <img src="C:\Users\saish\OneDrive\Desktop\course-cards\comment-story.svg" height="20px" style="margin-right: 5px;"/>
+                    <span style="margin-right:10px;">4</span>
+
+                    <img src="C:\Users\saish\OneDrive\Desktop\course-cards\share-logo.svg" height="15px"/>
+                </div>
+
+                <div class="add-icon-2">
+                    <span style="margin-right:10px;">See more</span>
+                    <img src="C:\Users\saish\OneDrive\Desktop\course-cards\right-arrow.png" height="20px" style="margin-right: 5px;"/>
+                </div>
+            </div>
+
         </div>
+        </div>
+
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+
 
     </div>
     
