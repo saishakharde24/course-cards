@@ -5,7 +5,7 @@
    <style>
     .container{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: wrap;
         }
 
@@ -122,6 +122,74 @@
         align-items: center;
     }
 
+
+    .item1{
+        height:350px;
+        width:300px;
+        margin:5px;
+        border-radius:8px 8px 0px 0px;
+        border:2px solid rgb(221, 217, 217);
+        background-color: rgb(255, 250, 241);
+    }
+
+    .item1:hover{
+        height:350px;
+        width:300px;
+        margin: 5px;
+        background-color:rgb(253, 241, 230);
+        border-radius: 10px;
+        border:1px solid gainsboro 
+    }
+
+    .hot-air-balloon{
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .button{
+        display:flex;
+        margin:2px;
+     }
+
+    .btn{
+        font-size: 12px;
+        border-radius: 20px;
+        background-color: rgb(214, 94, 114);
+        padding: 4px 20px;
+        margin-right:10px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom:10px;
+    }
+
+    .project-heading1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight:600;
+        font-size:20px;
+        margin-left:15px;
+    }
+
+     .description1{
+        font-size: 10px;
+        color: rgb(105,105,105);
+        margin-left:15px;
+    }
+
+     .project-duration-info-p1{
+        font-size:14px;
+        align-items: center;
+    }
+
+    .profile-img-p1{
+        border-radius:50%;
+        margin-left:15px;
+        align-items: center;
+    }
+
+    .add-icon.project-duration-sub-info-p1{
+        display: flex;
+        justify-content: space-between;
+    }
+
    </style>
 </head>
 <body>
@@ -140,6 +208,7 @@
                 <span class="tech">GitHub</span>
                 <span class="tech">MongoDB</span>
             </div>
+        </div>
 
             <div class="duration">
                 <div class="project-duration-sub-info">
@@ -175,11 +244,35 @@
         </div>
 
 
-        <div class="item">1</div>
-        <div class="item">2</div>
+        <div class="item1">
+            <img src="C:\Users\saish\OneDrive\Desktop\course-cards\hot-air-balloon.avif" width="300px" class="hot-air-balloon"/>
+
+            <div class="button">
+                <span class="btn">POPULAR</span>
+            </div>
+
+            <div class="heading">
+                <span class="project-heading1">Hope Over Fear</span>
+            <br/>
+             <p class="description1">~The Future can be scary,but there are ways to deal with that fear.</p>
+            </div>
+
+             <hr class="hr-line"/>
+
+                <div class="project-duration-sub-info-p1">
+                    <img src="C:\Users\saish\OneDrive\Desktop\course-cards\alina rai.jpeg" height="20px" class="profile-img-p1"/>
+                <span class="project-duration-info-p1">Alina Rai</span>
+                </div>
+           </div>
+     </div>
 
 
-    </div>
+     <div class="item2">
+            <img src="C:\Users\saish\OneDrive\Desktop\course-cards\hot-air-balloon.avif" width="300px" class="hot-air-balloon"/>
+
+        
+        
+
     
 </body>
 </html>
